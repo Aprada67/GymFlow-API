@@ -2,7 +2,7 @@ const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
     info: {
-        title: 'GymFlow-APIt',
+        title: 'GymFlow-API',
         description: 'GymFlow-API'
     },
     host: 'localhost:3000',
