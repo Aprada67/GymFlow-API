@@ -4,8 +4,8 @@ const saveMembership = (req, res, next) => {
     const validationRule = {
         name: 'required|string',
         price: 'required|number',
-        duration: 'required|string',
-        benefits: 'array',
+        duration: 'required|number',
+        benefits: 'string',
         isActive: 'bool'
     };
 
