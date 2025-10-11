@@ -6,7 +6,7 @@ const saveMembership = (req, res, next) => {
         price: 'required|number',
         duration: 'required|number',
         benefits: 'string',
-        isActive: 'bool'
+        isActive: 'boolean'
     };
 
     validator(req.body, validationRule, {}, (err, status) => {
