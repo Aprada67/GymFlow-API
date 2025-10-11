@@ -40,8 +40,7 @@ const createMembership = async (req, res) => {
             name: req.body.name,
             price: req.body.price,
             duration: req.body.duration,
-            benefits: req.body.benefits,
-            isActive: req.body.isActive
+            benefits: req.body.benefits
         };
 
         const db = mongodb.getDatabase().db();
@@ -69,8 +68,7 @@ const updateMembership = async (req, res) => {
             name: req.body.name,
             price: req.body.price,
             duration: req.body.duration,
-            benefits: req.body.benefits,
-            isActive: req.body.isActive
+            benefits: req.body.benefits
         };
 
         const db = mongodb.getDatabase().db();
