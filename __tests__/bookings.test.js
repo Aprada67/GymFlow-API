@@ -9,8 +9,8 @@ describe('Bookings API', () => {
   });
 
   it('GET /bookings/:id → should return a booking or 404', async () => {
-    const fakeId = '68dc2ec8f5bf00375ffc57fb';
-    const res = await request(app).get(`/bookings/${fakeId}`);
+    const bookingId = '68de218851e03d1c3932b4d1';
+    const res = await request(app).get(`/bookings/${bookingId}`);
     expect([200, 404, 500]).toContain(res.statusCode);
   });
 });

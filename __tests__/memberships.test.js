@@ -9,8 +9,8 @@ describe('Memberships API', () => {
   });
 
   it('GET /memberships/:id → should return a membership or 404', async () => {
-    const fakeId = '68dc2f63f5bf00375ffc57fc';
-    const res = await request(app).get(`/memberships/${fakeId}`);
+    const membershipId = '68dc2ec8f5bf00375ffc57fb';
+    const res = await request(app).get(`/memberships/${membershipId}`);
     expect([200, 404, 500]).toContain(res.statusCode);
   });
 });

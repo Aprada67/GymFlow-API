@@ -9,8 +9,8 @@ describe('Classes API', () => {
   });
 
   it('GET /classes/:id → should return a class or 404', async () => {
-    const fakeId = '68dc2f8bf5bf00375ffc57fd';
-    const res = await request(app).get(`/classes/${fakeId}`);
+    const classId = '68de201a51e03d1c3932b378';
+    const res = await request(app).get(`/classes/${classId}`);
     expect([200, 404, 500]).toContain(res.statusCode);
   });
 });
